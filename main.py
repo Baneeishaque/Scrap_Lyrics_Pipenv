@@ -3,9 +3,9 @@ from bs4 import BeautifulSoup
 import soupsieve as sv
 import re
 
-artist = 'AZ'
-artist_id = 14943
-search_term = 'i move like a'
+artist = 'Spice-Girls'
+artist_id = 199833
+search_term = 'good sheep'
 print(str(artist_id) + ' : ' + artist)
 print('Search for : ' + search_term)
 
