@@ -2,10 +2,17 @@ import requests
 from bs4 import BeautifulSoup
 import soupsieve as sv
 import re
+import sys
 
-artist = 'Spice-Girls'
-artist_id = 199833
-search_term = 'good sheep'
+if len(sys.argv) == 4:
+    artist = sys.argv[1]
+    artist_id = sys.argv[2]
+    search_term = sys.argv[3]
+else:
+    artist = 'Spice-Girls'
+    artist_id = 199833
+    search_term = 'good sheep'
+                          
 print(str(artist_id) + ' : ' + artist)
 print('Search for : ' + search_term)
 
